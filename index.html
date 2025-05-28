@@ -73,6 +73,64 @@
             <p>Engaging with the letter box answer helps many players. It enhances strategic thinking and promotes a deeper grasp of word formation. Whether you are a beginner or a seasoned player, this guide offers clarity and actionable advice to enhance your puzzle-solving experience. This comprehensive guide details various aspects of the Letter Boxed game.</p>
 
             <img src="/img/letter-box-answer-image.png" alt="An image showing letter box answer puzzle interface" width="600" height="314" class="responsive-image">
+            <section>
+                <div class="togc" style="background-color: #e0f2f7; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 30px auto; max-width: 800px; font-family: 'Arial', sans-serif;">
+                    <h2 style="color: #0d47a1; text-align: center; margin-bottom: 25px;">Letter Box Answer Word Suggester</h2>
+                    <p style="text-align: center; color: #3f51b5; margin-bottom: 20px;">Input the letters for each side of the letter box. Get suggestions for valid words based on the rules.</p>
+
+                    <div class="grid-container" style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; margin-bottom: 30px;">
+                        <div class="side-input" style="flex: 1 1 180px; text-align: center; background-color: #bbdefb; padding: 15px; border-radius: 8px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);">
+                            <label for="topLetters" style="display: block; margin-bottom: 8px; color: #1a237e; font-weight: bold;">Top Letters:</label>
+                            <input type="text" id="topLetters" maxlength="3" value="TSE" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #64b5f6; border-radius: 5px; text-transform: uppercase; text-align: center; font-size: 1.1em; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
+                        </div>
+                        <div class="side-input" style="flex: 1 1 180px; text-align: center; background-color: #bbdefb; padding: 15px; border-radius: 8px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);">
+                            <label for="rightLetters" style="display: block; margin-bottom: 8px; color: #1a237e; font-weight: bold;">Right Letters:</label>
+                            <input type="text" id="rightLetters" maxlength="3" value="AIL" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #64b5f6; border-radius: 5px; text-transform: uppercase; text-align: center; font-size: 1.1em; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
+                        </div>
+                        <div class="side-input" style="flex: 1 1 180px; text-align: center; background-color: #bbdefb; padding: 15px; border-radius: 8px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);">
+                            <label for="bottomLetters" style="display: block; margin-bottom: 8px; color: #1a237e; font-weight: bold;">Bottom Letters:</label>
+                            <input type="text" id="bottomLetters" maxlength="3" value="NCD" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #64b5f6; border-radius: 5px; text-transform: uppercase; text-align: center; font-size: 1.1em; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
+                        </div>
+                        <div class="side-input" style="flex: 1 1 180px; text-align: center; background-color: #bbdefb; padding: 15px; border-radius: 8px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);">
+                            <label for="leftLetters" style="display: block; margin-bottom: 8px; color: #1a237e; font-weight: bold;">Left Letters:</label>
+                            <input type="text" id="leftLetters" maxlength="3" value="ROB" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #64b5f6; border-radius: 5px; text-transform: uppercase; text-align: center; font-size: 1.1em; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 25px;">
+                        <div style="flex: 1 1 200px; text-align: center;">
+                            <label for="minLength" style="display: block; margin-bottom: 5px; color: #1a237e;">Min Length:</label>
+                            <input type="number" id="minLength" value="3" min="3" style="width: calc(100% - 20px); padding: 8px; border: 1px solid #64b5f6; border-radius: 5px; text-align: center; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
+                        </div>
+                        <div style="flex: 1 1 200px; text-align: center;">
+                            <label for="maxLength" style="display: block; margin-bottom: 5px; color: #1a237e;">Max Length:</label>
+                            <input type="number" id="maxLength" value="7" min="3" style="width: calc(100% - 20px); padding: 8px; border: 1px solid #64b5f6; border-radius: 5px; text-align: center; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
+                        </div>
+                        <div style="flex: 1 1 200px; text-align: center;">
+                            <label for="lastLetter" style="display: block; margin-bottom: 5px; color: #1a237e;">Starts with (optional):</label>
+                            <input type="text" id="lastLetter" maxlength="1" style="width: calc(100% - 20px); padding: 8px; border: 1px solid #64b5f6; border-radius: 5px; text-transform: uppercase; text-align: center; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
+                        </div>
+                    </div>
+
+                    <div class="button-group" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 25px;">
+                        <button onclick="generateWords()" style="background-color: #2196f3; color: white; padding: 12px 25px; border: none; border-radius: 8px; font-size: 1.1em; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;" onmouseover="this.style.backgroundColor='#1976d2';" onmouseout="this.style.backgroundColor='#2196f3';" onmousedown="this.style.transform='scale(0.98)';">
+                            <i class="fas fa-magic" style="margin-right: 8px;"></i>Generate Words
+                        </button>
+                        <button onclick="clearResults()" style="background-color: #ef5350; color: white; padding: 12px 25px; border: none; border-radius: 8px; font-size: 1.1em; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;" onmouseover="this.style.backgroundColor='#d32f2f';" onmouseout="this.style.backgroundColor='#ef5350';" onmousedown="this.style.transform='scale(0.98)';">
+                            <i class="fas fa-redo" style="margin-right: 8px;"></i>Clear
+                        </button>
+                    </div>
+
+                    <div id="errorMessage" style="color: #c62828; text-align: center; margin-bottom: 15px; font-weight: bold;"></div>
+
+                    <div class="word-results" style="background-color: #ffffff; padding: 20px; border-radius: 10px; border: 1px solid #90caf9; min-height: 150px;">
+                        <h3 style="color: #0d47a1; margin-bottom: 15px; text-align: center;">Suggested Letter Box Answer Words:</h3>
+                        <div id="wordList" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            <p style="color: #546e7a; width: 100%; text-align: center;" id="initialMessage">Enter letters and click "Generate" to see words.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section>
                 <h2>Letter Box Answer Explained</h2>
@@ -162,64 +220,7 @@
                 <p>The main advantages of using a letter box answer solver are its accuracy, speed, and comprehensiveness. It virtually eliminates human error in word formation and can process many letter combinations instantly, presenting valid options that might take hours to find manually. This allows players to quickly explore options and identify optimal word chains without frustration. It is a powerful assistant for both learning and completing puzzles, making the game more approachable for everyone. This type of tool greatly enhances the puzzle-solving experience.</p>
             </section>
 
-            <section>
-                <div class="togc" style="background-color: #e0f2f7; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 30px auto; max-width: 800px; font-family: 'Arial', sans-serif;">
-                    <h2 style="color: #0d47a1; text-align: center; margin-bottom: 25px;">Letter Box Answer Word Suggester</h2>
-                    <p style="text-align: center; color: #3f51b5; margin-bottom: 20px;">Input the letters for each side of the letter box. Get suggestions for valid words based on the rules.</p>
-
-                    <div class="grid-container" style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; margin-bottom: 30px;">
-                        <div class="side-input" style="flex: 1 1 180px; text-align: center; background-color: #bbdefb; padding: 15px; border-radius: 8px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);">
-                            <label for="topLetters" style="display: block; margin-bottom: 8px; color: #1a237e; font-weight: bold;">Top Letters:</label>
-                            <input type="text" id="topLetters" maxlength="3" value="TSE" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #64b5f6; border-radius: 5px; text-transform: uppercase; text-align: center; font-size: 1.1em; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
-                        </div>
-                        <div class="side-input" style="flex: 1 1 180px; text-align: center; background-color: #bbdefb; padding: 15px; border-radius: 8px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);">
-                            <label for="rightLetters" style="display: block; margin-bottom: 8px; color: #1a237e; font-weight: bold;">Right Letters:</label>
-                            <input type="text" id="rightLetters" maxlength="3" value="AIL" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #64b5f6; border-radius: 5px; text-transform: uppercase; text-align: center; font-size: 1.1em; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
-                        </div>
-                        <div class="side-input" style="flex: 1 1 180px; text-align: center; background-color: #bbdefb; padding: 15px; border-radius: 8px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);">
-                            <label for="bottomLetters" style="display: block; margin-bottom: 8px; color: #1a237e; font-weight: bold;">Bottom Letters:</label>
-                            <input type="text" id="bottomLetters" maxlength="3" value="NCD" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #64b5f6; border-radius: 5px; text-transform: uppercase; text-align: center; font-size: 1.1em; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
-                        </div>
-                        <div class="side-input" style="flex: 1 1 180px; text-align: center; background-color: #bbdefb; padding: 15px; border-radius: 8px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);">
-                            <label for="leftLetters" style="display: block; margin-bottom: 8px; color: #1a237e; font-weight: bold;">Left Letters:</label>
-                            <input type="text" id="leftLetters" maxlength="3" value="ROB" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #64b5f6; border-radius: 5px; text-transform: uppercase; text-align: center; font-size: 1.1em; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
-                        </div>
-                    </div>
-
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 25px;">
-                        <div style="flex: 1 1 200px; text-align: center;">
-                            <label for="minLength" style="display: block; margin-bottom: 5px; color: #1a237e;">Min Length:</label>
-                            <input type="number" id="minLength" value="3" min="3" style="width: calc(100% - 20px); padding: 8px; border: 1px solid #64b5f6; border-radius: 5px; text-align: center; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
-                        </div>
-                        <div style="flex: 1 1 200px; text-align: center;">
-                            <label for="maxLength" style="display: block; margin-bottom: 5px; color: #1a237e;">Max Length:</label>
-                            <input type="number" id="maxLength" value="7" min="3" style="width: calc(100% - 20px); padding: 8px; border: 1px solid #64b5f6; border-radius: 5px; text-align: center; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
-                        </div>
-                        <div style="flex: 1 1 200px; text-align: center;">
-                            <label for="lastLetter" style="display: block; margin-bottom: 5px; color: #1a237e;">Starts with (optional):</label>
-                            <input type="text" id="lastLetter" maxlength="1" style="width: calc(100% - 20px); padding: 8px; border: 1px solid #64b5f6; border-radius: 5px; text-transform: uppercase; text-align: center; outline: none; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='#2196f3';" onblur="this.style.borderColor='#64b5f6';">
-                        </div>
-                    </div>
-
-                    <div class="button-group" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 25px;">
-                        <button onclick="generateWords()" style="background-color: #2196f3; color: white; padding: 12px 25px; border: none; border-radius: 8px; font-size: 1.1em; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;" onmouseover="this.style.backgroundColor='#1976d2';" onmouseout="this.style.backgroundColor='#2196f3';" onmousedown="this.style.transform='scale(0.98)';">
-                            <i class="fas fa-magic" style="margin-right: 8px;"></i>Generate Words
-                        </button>
-                        <button onclick="clearResults()" style="background-color: #ef5350; color: white; padding: 12px 25px; border: none; border-radius: 8px; font-size: 1.1em; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;" onmouseover="this.style.backgroundColor='#d32f2f';" onmouseout="this.style.backgroundColor='#ef5350';" onmousedown="this.style.transform='scale(0.98)';">
-                            <i class="fas fa-redo" style="margin-right: 8px;"></i>Clear
-                        </button>
-                    </div>
-
-                    <div id="errorMessage" style="color: #c62828; text-align: center; margin-bottom: 15px; font-weight: bold;"></div>
-
-                    <div class="word-results" style="background-color: #ffffff; padding: 20px; border-radius: 10px; border: 1px solid #90caf9; min-height: 150px;">
-                        <h3 style="color: #0d47a1; margin-bottom: 15px; text-align: center;">Suggested Letter Box Answer Words:</h3>
-                        <div id="wordList" style="display: flex; flex-wrap: wrap; gap: 10px;">
-                            <p style="color: #546e7a; width: 100%; text-align: center;" id="initialMessage">Enter letters and click "Generate" to see words.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
 
             <section>
                 <h2>Advanced Tips for Mastering Letter Boxed</h2>
